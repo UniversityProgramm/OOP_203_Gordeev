@@ -1,28 +1,41 @@
 public class Main {
-    public static void main(String[] args) {/*
+    // 1 задание я вам сдавал, кода не осталось, но если надо могу написать
+    public static void main(String[] args) {
+        thirdTask();
+    }
+
+    public static void secondTask() {
         String input = "inputs";
         int index = input.length() / 2;
-        System.out.println(String.valueOf(input.charAt(index-1)) + String.valueOf(input.charAt(index)));
-        */
-        String input = "input aaaaca abc aaa";
-        String[] inputArr = input.split(" ");
-        for (int i = 0; i < inputArr.length; i++){
-            char[] temp = new char[]{};
-            for (int j = 0; j < inputArr[i].length(); j++){
-                char let = inputArr[i].charAt(j);
-                boolean contain = Check(temp, let);
-                if (!contain){
-                    temp.
+        System.out.println(String.valueOf(input.charAt(index - 1)) + String.valueOf(input.charAt(index)));
+    }
+
+    public static void thirdTask() {
+        String input="1213 ffr jjjj wadjk ";
+        int numbDifferent = 0;
+        double minDifferent = Double.POSITIVE_INFINITY;
+        int index = 0;
+
+        String[] Words = input.split(" ");
+
+        for (int i = 0; i < Words.length; i++) {
+            for (int j = 0; j < Words[i].length() - 1; j++) {
+                if (Words[i].charAt(j) != Words[i].charAt(j + 1)) {
+                    numbDifferent++;
                 }
             }
-        }
-    }
-    public static boolean Check (char[] inp, char letter){
-        for (int j = 0; j < inp.length; j++){
-            if (inp[j] == letter){
-                return true;
+            if (numbDifferent < minDifferent) {
+                minDifferent = numbDifferent;
+                index = i;
             }
+            numbDifferent = 0;
+
         }
-        return false;
+        System.out.println(Words[index]);
+    }
+
+    public static void fourthTask() {
+
     }
 }
+
