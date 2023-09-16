@@ -35,7 +35,18 @@ public class Main {
     }
 
     public static void fourthTask() {
-
+        String str = "One two three раdfз д2ва три one two2 123";
+        int k = 0;
+        boolean detect = true;
+        String[] s = str.split(" ");
+        for (int i = 0; i < s.length; i++) {
+            for (int j = 0; j < s[i].length(); j++) {
+                if (( (int) s[i].charAt(j) < 65  (int) s[i].charAt(j) > 122  ((int) s[i].charAt(j) > 90 && (int) s[i].charAt(j) < 97) ))
+                detect = false;
+            }
+            if (detect) k++;
+        }
+        System.out.println(k);
     }
 }
 
