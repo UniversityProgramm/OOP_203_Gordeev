@@ -163,7 +163,5 @@ public class Vector {
         System.out.println(v1.getX1() +  v1.getY1() + v1.getX2() + v1.getY2());
         Vector summ = v1.vectorSumm(v2);
         Vector subtract = v1.vectorSubtraction(v2);
-
-
     }
 }

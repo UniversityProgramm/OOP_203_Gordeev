@@ -11,7 +11,6 @@ public class Circle extends Shape{
         this.point = point;
         this.radius = radius;
     }
-<<<<<<< HEAD
     public Point getPoint(){
         return this.point;
     }
@@ -21,21 +20,6 @@ public class Circle extends Shape{
     public double getRadius() {
         return radius;
     }
-=======
-
-    public Point getPoint(){
-        return this.point;
-    }
-
-    public void setPoint(Point point) {
-        this.point = point;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
->>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
     public void setRadius(double radius) {
         if (validate(radius)) {
             this.radius = radius;
@@ -43,18 +27,10 @@ public class Circle extends Shape{
     }
     private boolean validate(double radius) {
         if (radius <= 0) {
-<<<<<<< HEAD
             throw new NullPointerException("Радиус не может быть меньше 0");
         }
         return true;
     }
-=======
-            throw new NullPointerException("Radius can't be less than 0");
-        }
-        return true;
-    }
-
->>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
     public void draw() {
         try {
             System.out.println("Фигура круг");
@@ -66,11 +42,7 @@ public class Circle extends Shape{
             System.out.println();
         }
         catch (Exception error) {
-<<<<<<< HEAD
             throw new NullPointerException("Не все данные определены");
-=======
-            throw new NullPointerException("Фигура не описана до конца");
->>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
         }
 
     }
