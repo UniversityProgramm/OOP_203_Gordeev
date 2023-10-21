@@ -8,6 +8,7 @@ public class Triangle extends Shape {
     public Point getA() {
         return A;
     }
+<<<<<<< HEAD
     public void setA(Point A) {
         this.A = A;
     }
@@ -31,19 +32,56 @@ public class Triangle extends Shape {
             return true;
         }
     }
+=======
+
+    public void setA(Point A) {
+        this.A = A;
+    }
+
+    public Point getB() {
+        return B;
+    }
+
+    public void setB(Point B) {
+        this.B = B;
+    }
+
+    public Point getC() {
+        return C;
+    }
+
+    public void setC(Point C) {
+        this.C = C;
+    }
+
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
     public Triangle(Point A, Point B, Point C) {
         if (validate(A, B, C)) {
             this.A = A;
             this.B = B;
             this.C = C;
         }
+<<<<<<< HEAD
         else {
             throw new NullPointerException("Не удалось создать фигуру, т.к. точки лежат на одной прямой, cоздайте фигуру заново");
         }
+=======
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
     }
     public Triangle() {
 
     }
+<<<<<<< HEAD
+=======
+    private boolean validate(Point A, Point B, Point C) {
+        if (((A.getX() == C.getX()) || (A.getY() == C.getY())) && ((A.getX() == B.getX()) || (A.getY() == B.getY())) && ((B.getX() == C.getX()) || (B.getY() == C.getY()))) {
+            throw new NullPointerException("Точки х или y лежат на одной прямой");
+        }
+        else {
+            return true;
+        }
+    }
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
     public double getSquare() {
         double AB = distance(A, B);
         double BC = distance(B, C);
@@ -81,7 +119,11 @@ public class Triangle extends Shape {
             System.out.println();
         }
         catch (Exception error) {
+<<<<<<< HEAD
             throw new NullPointerException("Не все данные определены");
+=======
+            throw new NullPointerException("Фигура не описана до конца");
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
         }
     }
 }

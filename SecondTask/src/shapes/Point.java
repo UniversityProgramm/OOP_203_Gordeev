@@ -7,12 +7,24 @@ public class Point extends Shape {
     public double getX() {
         return x;
     }
+<<<<<<< HEAD
     public void setX(double x) {
         this.x = x;
     }
     public double getY(){
         return y;
     }
+=======
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public double getY(){
+        return y;
+    }
+
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
     public void setY(double y) {
         this.y = y;
     }
@@ -22,6 +34,10 @@ public class Point extends Shape {
         this.x = x;
         this.y = y;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
     public void draw() {
         try {
             System.out.println("Фигура точка");
@@ -30,7 +46,11 @@ public class Point extends Shape {
             System.out.println();
         }
         catch (Exception error) {
+<<<<<<< HEAD
             throw new NullPointerException("Не все данные определены");
+=======
+            throw new NullPointerException("Фигура не описана до конца");
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
         }
     }
     public double getSquare(){

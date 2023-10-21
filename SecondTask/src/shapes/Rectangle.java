@@ -18,7 +18,11 @@ public class Rectangle extends Shape {
     }
     private boolean validate(Point A, Point C) {
         if ((A.getX() == C.getX()) || (A.getY() == C.getY())) {
+<<<<<<< HEAD
             return false;
+=======
+            throw new NullPointerException("Не удалось создать фигуру, т.к. точки х или y лежат на одной прямой");
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
         }
         else {
             return true;
@@ -30,9 +34,13 @@ public class Rectangle extends Shape {
             this.A = A;
             this.C = C;
         }
+<<<<<<< HEAD
         else {
             throw new NullPointerException("Не удалось создать фигуру, т.к. точки лежат на одной прямой, cоздайте фигуру заново");
         }
+=======
+        else {System.out.println("создайте фигуру еще раз");}
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
     }
 
     public void draw() {
@@ -45,7 +53,11 @@ public class Rectangle extends Shape {
             System.out.println();
         }
         catch (Exception error) {
+<<<<<<< HEAD
             throw new NullPointerException("Не все данные определены");
+=======
+            throw new NullPointerException("Фигура не описана до конца");
+>>>>>>> 036102f92901456feda2d816e3b1c4f1fab9d31f
         }
     }
     public double getSquare(){
