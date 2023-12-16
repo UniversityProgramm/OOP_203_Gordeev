@@ -14,7 +14,7 @@ public class Main {
         User user = new User("admin", "12341");
         SiteAdminPanel sitePanel = new MySiteAdminPanel();
         sitePanel = new SiteSecurityProxy(sitePanel);
-        sitePanel.banUser(user, 10);
+        sitePanel.banUser(user, 0);
 
         GamePerson Player = new GamePerson(new GamePersonCommonPlayer());
         Player.transformToAdmin();
