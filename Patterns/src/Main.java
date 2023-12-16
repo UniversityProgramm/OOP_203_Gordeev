@@ -2,8 +2,6 @@ import Bridge.GamePerson;
 import Bridge.GamePersonCommonPlayer;
 import proxy.*;
 
-import java.util.Map;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -18,5 +16,6 @@ public class Main {
 
         GamePerson Player = new GamePerson(new GamePersonCommonPlayer());
         Player.transformToAdmin();
+        Player.transformToCommonPlayer();
     }
 }
