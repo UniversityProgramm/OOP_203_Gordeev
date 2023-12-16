@@ -24,7 +24,4 @@ public class Calculator {
         System.out.println(newCalculator.divide(0, 6));
 
     }
-
-
-
 }
