@@ -15,6 +15,7 @@ public class Calculator {
     public static <T extends Number, V extends Number> double divide(T a, V b) {
         return a.doubleValue() / b.doubleValue();
     }
+
     public static void main(String[] args) {
 
         Calculator newCalculator = new Calculator();
